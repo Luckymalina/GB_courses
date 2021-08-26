@@ -226,13 +226,11 @@ body {
 #menu-switch {
     display: none;
 }
-
+/* ======================= */
 #menu-switch:checked~.menu-list {
     display: block;
 }
 
-
-/* ======================= */
 
 .menu-list {
     display: none;
@@ -292,7 +290,6 @@ body {
     color: #000000;
     text-transform: uppercase;
 }
-
 .menu-title>a,
 .menu-list-item>a,
 .menu-sublist-item>a {
@@ -302,7 +299,7 @@ body {
 
 .menu-list-item>a {
     display: block;
-    margin: 0 0 11px 0;
+    margin: 20px 0 12px 0;
     color: #F16D7F;
     text-transform: uppercase;
 }
@@ -1011,14 +1008,6 @@ body {
     height: 10px;
 }
 
-.filters__choice {
-    position: absolute;
-    width: 360px;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    background-color: #ffffff;
-    z-index: 1;
-}
-
 .filters__sub-filter {
     padding: 11px;
 }
@@ -1123,7 +1112,6 @@ button:focus-visible {
 .filters__choice {
     position: absolute;
     width: 360px;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     background-color: #ffffff;
     z-index: 1;
 }
@@ -1332,7 +1320,13 @@ button:focus-visible {
 
 
 /* ===article=== */
-
+.article_box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 665px;
+    width: 100%;
+ }
 .article_information {
     display: flex;
     flex-direction: column;
@@ -1342,8 +1336,10 @@ button:focus-visible {
     border: 1px solid #EAEAEA;
     background-color: #FFFFFF;
     text-align: center;
-    margin: -40px auto 129px auto;
-    z-index: 1;
+    position: absolute;
+    top: -40px;
+box-sizing: border-box;
+    z-index: 10;
 }
 
 .article_information_1 {
@@ -1417,6 +1413,7 @@ button:focus-visible {
     background-color: #ffffff;
     word-break: break-all;
     margin-top: 49px;
+    margin-bottom: 65px;
 }
 
 .article_button_text {
@@ -1759,11 +1756,12 @@ text-transform: uppercase;
 }
 .basket_cost_line {
     display: block;
- max-width: 275px;
-    height: 0;
-    border: 0.5px solid #EAEAEA;
-margin-top:21px ;
+width: 275px;
+    height: 1;
+    border: 1px solid #E2E2E2;;
+margin:0 auto ;
 align-items: center;
+margin-top: 24px;
 }
 
 /* розовая кнопка */
@@ -1774,6 +1772,7 @@ align-items: center;
     width: 273px;
     height: 50px;
     padding: 15px;
+    margin: 0 auto;
     margin-top: 24px;
     background-color: #F16D7F;
     border: 1px solid #F16D7F;
@@ -1829,7 +1828,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding: 13px;
-margin-bottom: 31px;
+margin-bottom: 21px;
 box-sizing: border-box;
 border: 1px solid #A4A4A4;
 background-color: #ffffff;
@@ -1844,6 +1843,8 @@ width: 360px;
     display: flex;
     justify-content: space-between;
 width: 130px;
+margin-top: 31px;
+margin-bottom: 33px;
 }
 .registration_radio_btn{
     display: flex;
@@ -1854,13 +1855,6 @@ width: 130px;
 font-size: 11px;
 line-height: 13px;
 color: #000000;
-}
-.registration_title{
-font-weight: 300;
-font-size: 16px;
-line-height: 19px;
-color: #222222;
-margin-top: 33px;
 }
 .registration_password_information{
 font-weight: 300;
@@ -1896,4 +1890,31 @@ margin-bottom: 39px;
     background-color: #FFFFFF;
     border: 1px solid #F26376;
     color: #F26376;
+}
+
+.registration_information_title{
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+text-transform: uppercase;
+margin-bottom: 22px;
+}
+.registration_information_text{
+    font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+margin-bottom: 21px;
+}
+.registration_information_list {
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+margin-bottom: 16px;
+}
+.img_list{
+    color: #000;
+    margin-right: 22px;
 }
